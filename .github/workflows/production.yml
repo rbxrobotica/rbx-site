@@ -41,4 +41,3 @@ jobs:
           script: |
             cd ~/apps/rbx
             docker-compose up -d --build
-
