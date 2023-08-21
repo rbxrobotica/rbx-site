@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+.highlight {
+  font-family: 'Noto Sans', sans-serif;
+}
+@font-face { font-family: DejaVuSansMonoBold; src: url('assets/DejaVuSansMono-Bold.ttf'); }
+
+:root {
+  --base02: #073642;
+  --yellow: #b58900;
+  --blue: #268bd2;
+  --base2: #eee8d5;
+}
+body {background:var(--base02);}
+main {
+  min-height: 80vh;
+}
