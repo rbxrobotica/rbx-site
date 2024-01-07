@@ -1,8 +1,14 @@
-FROM node:18-alpine3.17 as build
+FROM node:15.12.0
 
 WORKDIR /app
-COPY . /app
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ADD . .
 
 RUN npm install
-RUN npm run preview
 
+ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["npm", "run", "dev"]
