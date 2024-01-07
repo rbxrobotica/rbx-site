@@ -40,7 +40,7 @@ services:
     volumes:
       - ./react-vite:/app-frontend
     ports:
-      - 3407:3407
+      - 80:80
     # depends_on:
     #   - rbx-backend-monolith
     restart: always
